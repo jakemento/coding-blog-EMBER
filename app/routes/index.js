@@ -5,22 +5,10 @@ export default Ember.Route.extend({
     return this.store.findAll('blog');
   },
   actions: {
-    destroyBlog(blog) {
-      blog.destroyRecord();
-      this.transitionTo('index');
-    },
+
     save3(params) {
       var newBlog = this.store.createRecord('blog', params);
       newBlog.save();
-      this.transitionTo('index');
-    },
-    update(blog, params) {
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          blog.set(key,params[key]);
-        }
-      });
-      blog.save();
       this.transitionTo('index');
     },
   }

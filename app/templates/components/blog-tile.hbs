@@ -1,11 +1,9 @@
-<li>{{blog.title}} -- {{blog.date}}
+<li> {{#link-to 'blog' blog.id}}{{blog.title}} {{/link-to}}
   {{#if isImageShowing }}
      <p> <img src={{blog.image}}> </p>
        <button class="btn btn-warning" {{action 'imageHide'}}>Hide image</button>
      {{else}}
        <button class="btn btn-danger" {{action 'imageShow'}}>Show image</button>
   {{/if}}
-      {{update-blog blog=blog update="update"}}
-      <button class="btn btn-danger" {{ action 'delete'}}> Delete Post </button>
     <br>
 </li>
