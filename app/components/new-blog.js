@@ -16,6 +16,9 @@ export default Ember.Component.extend({
      };
      this.set('addNewBlog', false);
      this.sendAction('save2', params);
+   },
+   cancel() {
+     this.set('addNewBlog', false);
    }
  }
 });

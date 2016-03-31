@@ -1,15 +1,14 @@
 <h1> Welcome to Jake's Blog </h1>
 
-<ul>
-  {{#each model as |blog|}}
-    {{blog-tile blog=blog destroyBlog="destroyBlog"}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model as |blog|}}
+      {{blog-tile blog=blog destroyBlog="destroyBlog" update="update"}}
+    {{/each}}
+  </ul>
+
 
 {{new-blog save2="save3"}}
 
+<hr>
 
-
-{{#link-to 'contact'}} CONTACT page {{/link-to}}
-<br>
-{{#link-to 'about'}} ABOUT page {{/link-to}}
+{{#link-to 'contact'}} CONTACT page {{/link-to}} ||{{#link-to 'about'}} ABOUT page {{/link-to}}

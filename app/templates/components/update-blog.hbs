@@ -1,7 +1,11 @@
-{{#if addNewBlog}}
-  <h1>New Blog</h1>
+{{#if updateBlogForm}}
+  <h4>Update {{Blog.title}} from {{blog.date}}</h4>
     <div>
       <form>
+        <div class="fancyButton">
+          <button {{action 'update' blog}}>Save</button>
+          <button {{action 'cancel'}}>Cancel</button>
+        </div>
         <div class="form-group">
           <label for="title">title</label>
           {{input value=title id="title"}}
@@ -27,11 +31,9 @@
           {{textarea rows="8" cols="70" value=text id="text"}}
         </div>
 
-        <button {{action 'save1'}}>Save</button>
-        <button {{action 'cancel'}}>Cancel</button>
-
       </form>
     </div>
-  {{else}}
-    <button class="btn btn-success" {{action 'blogFormShow'}}>New Blog Post</button>
+{{else}}
+    <button class="btn btn-success" {{action 'updateBlogForm'}}>Update</button>
+
 {{/if}}

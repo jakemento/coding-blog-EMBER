@@ -1,10 +1,11 @@
 <li>{{blog.title}} -- {{blog.date}}
-    {{#if isImageShowing }}
-       <p> <img src={{blog.image}}> </p>
-       <button {{action 'imageHide'}}>Hide image</button>
+  {{#if isImageShowing }}
+     <p> <img src={{blog.image}}> </p>
+       <button class="btn btn-warning" {{action 'imageHide'}}>Hide image</button>
      {{else}}
-       <button {{action 'imageShow'}}>Show image</button>
-       {{/if}}
-       <button {{ action 'delete'}}> Delete Post </button>
-
+       <button class="btn btn-danger" {{action 'imageShow'}}>Show image</button>
+  {{/if}}
+      {{update-blog blog=blog update="update"}}
+      <button class="btn btn-danger" {{ action 'delete'}}> Delete Post </button>
+    <br>
 </li>
