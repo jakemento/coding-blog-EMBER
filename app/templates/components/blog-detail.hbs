@@ -1,9 +1,10 @@
-<p class="border"> {{blog.title}} </p>
+<center> <p class="border"> {{blog.title}} </p> </center>
   <br>
-  <p> by {{blog.author}}
+  <center> <p> by {{blog.author}}
   <br>
   {{blog.date}}
-{{blog.text}} </p>
+  <hr>
+{{blog.text}} </p> </center>
 <br>
 <hr>
-<button class="btn btn-danger" {{action 'delete' blog}}>Delete</button>
+<center> <button class="btn btn-info" {{action 'delete' blog}}>Delete</button> </center>

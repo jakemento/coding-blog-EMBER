@@ -1,5 +1,38 @@
-<header class = "jumbotron">
+<header id="header" class = "jumbotron">
   <h1>Jake's Blog</h1>
+
+  <img class="stretch" src="assets/images/header.jpg" alt="" />
+
+
+
+{{#bs-navbar class='navbar-default navbar-fixed-top'}}
+  {{!-- This nested link to allows the active state to work on your menu items --}}
+  {{#link-to 'index' tagName='li'}}
+  {{link-to 'Home'}}
+  {{/link-to}}
+  {{#link-to 'about' tagName='li'}}
+    {{link-to 'about'}}
+  {{/link-to}}
+  {{#link-to 'contact' tagName='li'}}
+    {{link-to 'contact'}}
+  {{/link-to}}
+  {{#link-to 'blog' 0 tagName='li'}}
+    {{link-to 'blog-One'}}
+  {{/link-to}}
+{{/bs-navbar}}
+
+
+{{#rl-dropdown-container class="dropdown"}}
+  {{#rl-dropdown-toggle class="btn btn-default"}}
+    Toggle <span class="caret"></span>
+  {{/rl-dropdown-toggle}}
+
+  {{#rl-dropdown tagName="ul" class="dropdown-menu" closeOnChildClick="a:link"}}
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  {{/rl-dropdown}}
+{{/rl-dropdown-container}}
 </header>
 
 <div class="container">
@@ -9,5 +42,5 @@
 <hr>
 
 <footer>
-  <center> {{#link-to 'index'}} HOME {{/link-to}}|| {{#link-to 'contact'}} CONTACT {{/link-to}} ||{{#link-to 'about'}} ABOUT {{/link-to}} </center>
+  <center> {{#link-to 'index'}} HOME {{/link-to}}||{{#link-to 'about'}} ABOUT {{/link-to}} || {{#link-to 'contact'}} CONTACT {{/link-to}}  </center>
 </footer>

@@ -45,3 +45,10 @@ p {
   color: plum;
   width: 7.5%;
 }
+
+.stretch {
+  width: 100%;
+  height: 18px max;
+  opacity: 0.4;
+  padding-bottom: 14px;
+}
