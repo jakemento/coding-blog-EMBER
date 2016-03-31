@@ -1,0 +1,8 @@
+{ "blogs": [{
+    "title": "Good Day Today",
+    "author": "Jake S.",
+    "date": "01-03-2016",
+    "text": "Today was unlike any other. Learned a lot at Epicodus on Day One. Like, how to use git commands, and how to manipulate and create a web site using HTML. Challenging, but a lot of Fun!",
+    "image": "https://www.prestashop.com/blog/en/files/2015/07/blog_post-657x345.jpg"
+  }]
+}

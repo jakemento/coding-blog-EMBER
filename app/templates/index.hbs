@@ -1,0 +1,14 @@
+<h1> Welcome to Jake's Blog </h1>
+
+<ul>
+  {{#each model as |blog|}}
+    <li> {{blog.title}} <img src="{{blog.image}}"/> </li>
+  {{/each}}
+</ul>
+
+
+
+
+{{#link-to 'contact'}} CONTACT page {{/link-to}}
+<br>
+{{#link-to 'about'}} ABOUT page {{/link-to}}
