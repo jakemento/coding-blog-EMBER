@@ -1,0 +1,9 @@
+<li>{{blog.title}} -- {{blog.date}}
+    {{#if isImageShowing }}
+       <p> <img src={{blog.image}}> </p>
+       <button {{action 'imageHide'}}>Hide image</button>
+     {{else}}
+       <button {{action 'imageShow'}}>Show image</button>
+
+    {{/if}}
+</li>

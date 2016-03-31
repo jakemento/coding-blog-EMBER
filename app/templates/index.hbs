@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model as |blog|}}
-    <li> {{blog.title}} <img src="{{blog.image}}"/> </li>
+    {{blog-tile blog=blog}}
   {{/each}}
 </ul>
 
