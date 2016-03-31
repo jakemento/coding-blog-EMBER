@@ -2,10 +2,11 @@
 
 <ul>
   {{#each model as |blog|}}
-    {{blog-tile blog=blog}}
+    {{blog-tile blog=blog destroyBlog="destroyBlog"}}
   {{/each}}
 </ul>
 
+{{new-blog save2="save3"}}
 
 
 

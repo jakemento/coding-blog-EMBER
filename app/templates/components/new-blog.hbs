@@ -1,0 +1,35 @@
+{{#if addNewBlog}}
+  <h1>New Blog</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">title</label>
+          {{input value=title id="title"}}
+        </div>
+
+        <div class="form-group">
+          <label for="author">author</label>
+          {{input value=author id="author"}}
+        </div>
+
+        <div class="form-group">
+          <label for="date">date:</label>
+          {{input type="date" value=date id="date"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">image url:</label>
+          {{input value=image id="image"}}
+        </div>
+
+        <div class="form-group">
+          <label for="text">Text</label>
+          {{textarea rows="8" cols="70" value=text id="text"}}
+        </div>
+
+        <button {{action 'save1'}}>Save</button>
+      </form>
+    </div>
+  {{else}}
+    <button {{action 'blogFormShow'}}>New Blog</button>
+{{/if}}
