@@ -11,5 +11,9 @@ export default Ember.Route.extend({
       newBlog.save();
       this.transitionTo('index');
     },
+    destroyBlog(blog) {
+      blog.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });

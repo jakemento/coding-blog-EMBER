@@ -5,10 +5,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('blog', params.blog_id);
   },
   actions: {
-    destroyBlog(blog) {
-      blog.destroyRecord();
-      this.transitionTo('index');
-    },
     update(blog, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
@@ -16,6 +12,10 @@ export default Ember.Route.extend({
         }
       });
       blog.save();
+      this.transitionTo('index');
+    },
+    destroyBlog(blog) {
+      blog.destroyRecord();
       this.transitionTo('index');
     }
   }
