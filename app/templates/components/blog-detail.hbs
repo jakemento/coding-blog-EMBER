@@ -1,10 +1,18 @@
 <center> <p class="border"> {{blog.title}} </p> </center>
   <br>
+
   <center> <p> by {{blog.author}}
+  <br>
+  <img src="{{blog.image}}" alt="" />
   <br>
   {{blog.date}}
   <hr>
 {{blog.text}} </p> </center>
 <br>
+<center> <p class="linker"> {{#link-to 'index'}} Go Back {{/link-to}} </p> </center>
+
+<br>
+
+
 <hr>
 <center> <button class="btn btn-info" {{action 'delete' blog}}>Delete</button> </center>
