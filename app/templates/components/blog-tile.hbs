@@ -1,9 +1,11 @@
-<li> {{#link-to 'blog' blog.id}}{{blog.title}} {{/link-to}}
-  {{#if isImageShowing }}
-     <p> <img src={{blog.image}}> </p>
-       <button class="btn btn-warning" {{action 'imageHide'}}>Hide image</button>
-     {{else}}
-       <button class="btn btn-danger" {{action 'imageShow'}}>Show image</button>
-  {{/if}}
-    <br>
-</li>
+<div class="col-lg-6">
+  <li> {{#link-to 'blog' blog.id}}{{blog.title}} {{/link-to}}
+    <p class="tiny"> {{blog.author}} </p>
+    {{#if isImageShowing }}
+       <p> <img src={{blog.image}}> </p>
+         <button class="btn btn-warning" {{action 'imageHide'}}>Hide image</button>
+       {{else}}
+         <button class="btn btn-danger" {{action 'imageShow'}}>Show image</button>
+    {{/if}}
+  </li>
+</div>
