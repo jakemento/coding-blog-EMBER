@@ -1,11 +1,11 @@
-<div class="container" class="col-lg-6">
-  <li> {{#link-to 'blog' blog.id}}{{blog.title}} {{/link-to}}
-    <p class="tiny"> {{blog.author}} </p>
+<div class="container" class="col-lg-4">
+  <li> <center> {{#link-to 'blog' blog.id}}{{blog.title}}  {{/link-to}} </center>
+    <center> <p class="tiny"> {{blog.author}} </p> </center>
     {{#if isImageShowing }}
-       <p> <img src={{blog.image}}> </p>
-         <button class="btn btn-warning" {{action 'imageHide'}}>Hide image</button>
+       <p><center> <img src={{blog.image}}> </center> </p>
+        <center> <button class="btn btn-warning" {{action 'imageHide'}}>Hide image</button> </center>
        {{else}}
-         <button class="btn btn-danger" {{action 'imageShow'}}>Show image</button>
+        <center> <button class="btn btn-danger" {{action 'imageShow'}}>Show image</button> </center>
     {{/if}}
   </li>
 </div>

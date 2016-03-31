@@ -8,6 +8,14 @@
   {{blog.date}}
   <hr>
 {{blog.text}} </p> </center>
+
+<h1>
+<ul>
+{{#each model.comment as |comment|}}
+  <li>{{comment.text}}</li>
+{{/each}}
+</ul>
+</h1>
 <br>
 <center> <p class="linker"> {{#link-to 'index'}} Go Back {{/link-to}} </p> </center>
 

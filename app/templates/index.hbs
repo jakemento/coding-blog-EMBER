@@ -1,10 +1,7 @@
   <ul>
-    {{#each model as |blog|}}
+    {{#each model.blogs as |blog|}}
       {{blog-tile blog=blog destroyBlog="destroyBlog" update="update"}}
     {{/each}}
   </ul>
 
-  <div class="col-md-12">
-    <br>
-      <center>  {{new-blog save2="save3"}} </center>
-  </div>
+<center>  {{new-blog save2="save3"}} </center>

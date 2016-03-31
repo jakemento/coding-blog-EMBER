@@ -2,3 +2,11 @@
     {{blog-detail blog=model destroyBlog = "destroyBlog"}}
     {{update-blog blog=model update="update"}}
     <br>
+
+    <ul>
+  {{#each model.comments as |comment|}}
+    {{comment-tile comment=comment edit="editComment" deleteComment="deleteComment"}}
+  {{/each}}
+</ul>
+
+{{new-comment saveB="saveC" post=model}}

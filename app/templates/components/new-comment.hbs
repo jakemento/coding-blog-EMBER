@@ -1,0 +1,18 @@
+{{#if addNewComment}}
+  <h1>New Comment</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="text">Text</label>
+          {{textarea rows="8" cols="70" value=text id="text"}}
+        </div>
+
+        <button {{action 'saveA'}}>Save</button>
+        <button {{action 'cancel'}}>Cancel</button>
+
+      </form>
+    </div>
+  {{else}}
+
+    <center> <button class="fancyButton" {{action 'commentFormShow'}}>New Comment</button> </center>
+{{/if}}

@@ -23,7 +23,7 @@ h2 {
    font-size: 22px;
    font-family: cursive;
    font-weight: bolder;
-   text-decoration: overline;
+   text-decoration: underline;
 }
 
 .fancyButton {
@@ -62,4 +62,12 @@ p {
 
 .jumbotron {
 
+}
+
+.whiteText {
+  color: white;
+}
+
+li {
+  list-style:none;
 }

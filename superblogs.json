@@ -1,0 +1,27 @@
+{ "blogs": [{
+    "title": "Good Day Today",
+    "author": "Jake S.",
+    "date": "01-03-2016",
+    "text": "Today was unlike any other. Learned a lot at Epicodus on Day One. Like, how to use git commands, and how to manipulate and create a web site using HTML. Challenging, but a lot of Fun!",
+    "image": "https://www.prestashop.com/blog/en/files/2015/07/blog_post-657x345.jpg"
+    }, {
+      "title": "Day 2",
+      "author": "Jake S.",
+      "date": "01-04-2016",
+      "text": "What a good day today. Second day of coding class. pretty crazy.",
+      "image": "http://assets.nydailynews.com/polopoly_fs/1.1542852.1386652602!/img/httpImage/image.jpg_gen/derivatives/article_970/178891861.jpg"
+    }, {
+      "title": "Third Day",
+      "author": "Jake S.",
+      "date": "01-05-2016",
+      "text": "The third day was pretty rough...not of a fan of Git requests.... :( ",
+      "image": "http://graphitepublications.com/wp-content/uploads/2015/04/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg"
+    }],
+    "comments": [{
+      "text": "Had Fun Posting this one.",
+      "author": "Jake S"
+    }, {
+      "text": "This was a fun one to read.",
+      "author": "Jake S"
+    }]
+  }
